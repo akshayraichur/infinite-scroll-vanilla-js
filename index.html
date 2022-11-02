@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Scroll</title>
+
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏄🏻‍♂️</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏄🏻‍♂️</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>My Blog</h1>
+      <section class="container">
+        <div class="filter-container">
+          <input
+            type="text"
+            id="filter"
+            class="filter"
+            placeholder="Filter Posts...."
+          />
+        </div>
+
+        <div class="post-container">
+          <!-- <div class="post">
+            <div class="number">1</div>
+            <div class="post-info">
+              <h2 class="post-title">Post one</h2>
+              <p class="post-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi incidunt mollitia, quo harum cupiditate alias esse? Sit
+                omnis commodi nam.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        This project is built by Akshay Raichur,
+        <span><a href="https://github.com/akshayraichur">checkout</a></span> for
+        more
+      </p>
+    </footer>
+  </body>
+</html>

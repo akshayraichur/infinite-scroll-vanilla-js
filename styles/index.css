@@ -1,0 +1,138 @@
+:root {
+  --primary-color: #2c3639;
+  --seconndary-color: #3f4e4f;
+  --text-color: #fbfbfb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main h1 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.filter {
+  width: 100%;
+  padding: 1rem 0.2rem;
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  border: 1px solid var(--seconndary-color);
+}
+
+.post {
+  position: relative;
+  padding: 1rem;
+  margin: 2rem 0;
+  height: 150px;
+  background-color: var(--seconndary-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.post .post-title {
+  margin: 0;
+}
+
+.post .post-body {
+  line-height: 1.3;
+}
+
+.post .number {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  font-size: 0.9rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--seconndary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.3);
+  margin-left: 0.2rem;
+}
+
+.loader {
+  opacity: 0;
+  display: flex;
+  position: fixed;
+  bottom: 80px;
+  transition: opacity 0.3s ease-in;
+}
+
+.loader.show {
+  opacity: 1;
+}
+
+.circle {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  animation: bounce 0.5s ease-in infinite;
+}
+
+.circle:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+
+.circle:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+footer {
+  text-align: center;
+  margin: 2rem;
+}
+
+a {
+  color: #18978f;
+}
+
+a:checked {
+  color: var(--text-color);
+}
