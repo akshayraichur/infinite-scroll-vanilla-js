@@ -64,7 +64,6 @@ function filterPosts(e) {
       post.style.display = 'none';
     }
   });
-  console.log(e.target.value);
 }
 
 // filter posts
